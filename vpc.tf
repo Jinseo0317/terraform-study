@@ -15,7 +15,7 @@ resource "aws_subnet" "terraform_sub1"{
     vpc_id = aws_vpc.main.id
     cidr_block = "10.0.1.0/24"
 
-    availability_zone = "ap-northeast-2"
+    availability_zone = "ap-northeast-2a"
 
     tags = {
         Name = "terraform_sub1"
@@ -26,7 +26,7 @@ resource "aws_subnet" "terraform_sub2"{
     vpc_id = aws_vpc.main.id
     cidr_block = "10.0.2.0/24"
 
-    availability_zone = "ap-northeast-2"
+    availability_zone = "ap-northeast-2b"
 
     tags = {
         Name = "terraform_sub2"
